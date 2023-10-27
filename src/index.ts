@@ -23,4 +23,5 @@ app.listen(port, () => {
     console.log(`🚀 Example app listening at http://localhost:${port}`)
 })
 
-export const handler = serverless(app);
+module.exports = app;
+module.exports.handler = serverless(app);
