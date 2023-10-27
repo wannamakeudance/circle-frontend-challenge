@@ -5,7 +5,7 @@ import ErrorHandler from './utils/ErrorHandler'
 import cors from 'cors'
 
 const app = express()
-const port = 8001
+const port = 443
 
 app.use(express.json())
 app.use(cors())
