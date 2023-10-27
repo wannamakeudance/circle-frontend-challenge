@@ -1,5 +1,4 @@
 import express from 'express'
-import serverless from "serverless-http";
 import booksRouter from './router/booksRouter'
 import { errorHandler } from './middleware/errorHandler'
 import ErrorHandler from './utils/ErrorHandler'
@@ -22,6 +21,3 @@ app.use(errorHandler)
 app.listen(port, () => {
     console.log(`🚀 Example app listening at http://localhost:${port}`)
 })
-
-module.exports = app;
-module.exports.handler = serverless(app);
